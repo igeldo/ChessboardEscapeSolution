@@ -20,5 +20,3 @@ https://github.com/3b1b/videos/blob/master/_2020/chess.py
 4. Kann man die Klasse „SetVectors“ auch für andere Quadrate als 8x8 generisch erzeugen. Ein erster Versuch könnte ein 4x4 Brett sein wie in 
 https://abz.inf.ethz.ch/wp-content/uploads/SK_Wehrle_Schachbrettraetsel.pdf 
 
-# ChessboardEscapeSolution
-# ChessboardEscapeSolution
