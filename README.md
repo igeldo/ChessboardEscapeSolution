@@ -21,3 +21,4 @@ https://github.com/3b1b/videos/blob/master/_2020/chess.py
 https://abz.inf.ethz.ch/wp-content/uploads/SK_Wehrle_Schachbrettraetsel.pdf 
 
 # ChessboardEscapeSolution
+# ChessboardEscapeSolution
