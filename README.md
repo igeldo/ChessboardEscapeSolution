@@ -2,7 +2,7 @@
 The following sets are used to represent the necessary 6 bits. 
 The number of heads of the coins (=True) in the respective set determines whether the respective bit is =1 or =0.
 ![sets.png](sets.png)
-## Explanation of program exeution
+## Explanation of program execution
 
 1. you can enter "1" or "2" at the beginning of the program:
 with "1" an original example for the use of matplotlib is shown,
