@@ -35,26 +35,32 @@ class CoinPuzzle:
         completeSet = self._sets.getSetGesamt()
         target = completeSet
         # Case differentiation for each bit
+        #print(f"todo {todo}")
         if todo[-1]:
             target = target & self._sets.getSet0()
         else:
             target = target & (completeSet - self._sets.getSet0())
+        #print(f"set= {target}")
         if todo[-2]:
             target = target & self._sets.getSet1()
         else:
             target = target & (completeSet - self._sets.getSet1())
+        #print(f"set= {target}")
         if todo[-3]:
             target = target & self._sets.getSet2()
         else:
             target = target & (completeSet - self._sets.getSet2())
+        #print(f"set= {target}")
         if todo[-4]:
             target = target & self._sets.getSet3()
         else:
             target = target & (completeSet - self._sets.getSet3())
+        #print(f"set= {target}")
         if todo[-5]:
             target = target & self._sets.getSet4()
         else:
             target = target & (completeSet - self._sets.getSet4())
+        #print(f"set= {target}")
         if todo[-6]:
             target = target & self._sets.getSet5()
         else:
