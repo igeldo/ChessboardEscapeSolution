@@ -86,7 +86,16 @@ class CoinPuzzle:
         print(aVal,tVal)
         corr = self.correction(aVal, tVal)
         flip = self.calculate() [2:] # deletes prefix '0b'
-        print(f"key:  {aVal.rjust(6, '0')} , {int(aVal,2)}")
-        print(f"code: {tVal.rjust(6, '0')} , {int(tVal,2)}")
+        print(f"code: {aVal.rjust(6, '0')} , {int(aVal,2)}")
+        print(f"key : {tVal.rjust(6, '0')} , {int(tVal,2)}")
         print(f"corr: {corr.rjust(6, '0')}")
         print(f"flip: {flip.rjust(6, '0')} , {int(flip,2)}")
+        self.test(int(flip,2))
+
+    def test(self,flip):
+        self._coinsFlat [flip] = not (self._coinsFlat [flip])
+        self._sets2 = SetsVectors(self._coinsFlat)
+        newVal = self._sets2.getbits()
+        newVal = int("".join("1" if value else "0" for value in newVal), 2)
+        newVal = bin(newVal)  [2:] # deletes prefix '0b'
+        print(f"test: {newVal.rjust(6, '0')} , {int(newVal,2)}")
