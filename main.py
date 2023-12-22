@@ -16,7 +16,7 @@ class Main:
                 key_location = 27
                 chessboard = Chessboard(rows=8,columns=8,key=key_location)
                 chessboard.plot()
-                chessboard.print()
+                #chessboard.print()
 
         except ValueError:
             print("wrong input: give a numer please")

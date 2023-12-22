@@ -59,7 +59,7 @@ class CoinPuzzle:
             target = target & self._sets.getSet5()
         else:
             target = target & (completeSet - self._sets.getSet5())
-        print(f"set= {target}")
+        #print(f"set= {target}")
         return(bin(target.pop()))  # convert a list with an int element into an integer and then into a binary number
 
     def print(self):
