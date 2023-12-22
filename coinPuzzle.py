@@ -36,7 +36,7 @@ class CoinPuzzle:
         target = completeSet
         # Case differentiation for each bit
         if todo[-1]:
-            target = target & completeSet
+            target = target & self._sets.getSet0()
         else:
             target = target & (completeSet - self._sets.getSet0())
         if todo[-2]:
@@ -59,6 +59,7 @@ class CoinPuzzle:
             target = target & self._sets.getSet5()
         else:
             target = target & (completeSet - self._sets.getSet5())
+        print(f"set= {target}")
         return(bin(target.pop()))  # convert a list with an int element into an integer and then into a binary number
 
     def print(self):
