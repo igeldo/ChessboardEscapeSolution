@@ -70,20 +70,20 @@ class CoinPuzzle:
 
     def print(self):
         print(f"key: {self._key} , {self.keycode()}")
-        print(self._coinsBin)
-        print(self._coinsFlat)
-        print(self._sets.getSetGesamt())
-        print(self._sets.getSet0())
-        print(self._sets.getSet1())
-        print(self._sets.getSet2())
-        print(self._sets.getSet3())
-        print(self._sets.getSet4())
-        print(self._sets.getSet5())
+        #print(self._coinsBin)
+        #print(self._coinsFlat)
+        #print(self._sets.getSetGesamt())
+        #print(self._sets.getSet0())
+        #print(self._sets.getSet1())
+        #print(self._sets.getSet2())
+        #print(self._sets.getSet3())
+        #print(self._sets.getSet4())
+        #print(self._sets.getSet5())
         aVal = self._sets.getbits() [2:]  #deletes prefix '0b'
         aVal = int("".join("1" if value else "0" for value in aVal), 2)
         aVal = bin(aVal) [2:]
         tVal = self.keycode() [2:]
-        print(aVal,tVal)
+        #print(aVal,tVal)
         corr = self.correction(aVal, tVal)
         flip = self.calculate() [2:] # deletes prefix '0b'
         print(f"code: {aVal.rjust(6, '0')} , {int(aVal,2)}")
